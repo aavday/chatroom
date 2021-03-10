@@ -1,0 +1,1 @@
+class ChatUI{constructor(s){this.list=s}clear(){this.list.innerHTML=""}render(s){const n=dateFns.distanceInWordsToNow(s.created_at.toDate(),{addSuffix:!0}),a=`\n      <li class="list-group-item">\n        <span class="username">${s.username}</span>\n        <span class="message">${s.message}</span>\n        <div class="time">${n}</div>\n      </li>\n    `;this.list.innerHTML+=a}}
